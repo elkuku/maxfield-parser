@@ -1,0 +1,16 @@
+{
+    "name": "elkuku/maxfield-parser",
+    "license": "WTFPL",
+    "autoload": {
+        "psr-4": {
+            "Elkuku\\MaxfieldParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nikolai Plath",
+            "email": "der.el.kuku@gmail.com"
+        }
+    ],
+    "require": {}
+}
