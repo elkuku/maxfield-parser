@@ -68,9 +68,9 @@ class MaxfieldParser
             }
 
             $wayPoints[] = new Waypoint(
-                trim($parts[0]),
-                $coords[0],
-                $coords[1],
+                name: trim($parts[0]),
+                lat: $coords[0],
+                lon: $coords[1],
             );
         }
 
@@ -98,17 +98,20 @@ class MaxfieldParser
 
             if (5 !== count($parts)) {
                 throw new UnexpectedValueException(
-                    sprintf('Fishy CSV line has %d parts instead of 5', count($parts))
+                    sprintf(
+                        'Fishy CSV line has %d parts instead of 5',
+                        count($parts)
+                    )
                 );
             }
 
-            $p = new WayPointPrep();
-
-            $p->keysNeeded = (int)$parts[0];
-            $p->mapNo = (int)$parts[3];
-            $p->name = trim($parts[4]);
-
-            $keyPrep->addWayPoint($p);
+            $keyPrep->addWayPoint(
+                new WayPointPrep(
+                    mapNo: (int)$parts[3],
+                    name: trim($parts[4]),
+                    keysNeeded: (int)$parts[0]
+                )
+            );
         }
 
         return $keyPrep;
@@ -134,17 +137,15 @@ class MaxfieldParser
                 throw new UnexpectedValueException('Error parsing CSV file');
             }
 
-            $link = new AgentLink();
-
-            $link->linkNum = (int)$parts[0];
-            $link->isEarly = (bool)strpos($parts[0], '*');
-            $link->agentNum = (int)$parts[1];
-            $link->originNum = (int)$parts[2];
-            $link->originName = trim($parts[3]);
-            $link->destinationNum = (int)$parts[4];
-            $link->destinationName = trim($parts[5]);
-
-            $links[] = $link;
+            $links[] = new AgentLink(
+                linkNum: (int)$parts[0],
+                agentNum: (int)$parts[1],
+                isEarly: (bool)strpos($parts[0], '*'),
+                originNum: (int)$parts[2],
+                originName: trim($parts[3]),
+                destinationNum: (int)$parts[4],
+                destinationName: trim($parts[5])
+            );
         }
 
         usort(

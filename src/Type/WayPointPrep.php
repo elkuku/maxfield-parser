@@ -10,11 +10,11 @@ namespace Elkuku\MaxfieldParser\Type;
 
 class WayPointPrep
 {
-    public int $agentNum = 0;
-
-    public int $mapNo = 0;
-
-    public string $name = '';
-
-    public int $keysNeeded = 0;
+    public function __construct(
+        public int $agentNum = 0,
+        public int $mapNo = 0,
+        public string $name = '',
+        public int $keysNeeded = 0,
+    ) {
+    }
 }
