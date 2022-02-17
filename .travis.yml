@@ -3,3 +3,6 @@ dist: bionic
 php:
     - '8.1.0'
     - nightly
+
+before_script:
+    - composer install
