@@ -148,7 +148,7 @@ class MaxfieldParser
         usort(
             $links,
             static function ($a, $b) {
-                return $a->linkNum > $b->linkNum;
+                return $a->linkNum > $b->linkNum ? 1 : 0;
             }
         );
 
