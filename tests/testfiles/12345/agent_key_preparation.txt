@@ -1,0 +1,24 @@
+Agent Key Preparation: sorted by portal number 
+
+Needed = keys this agent requires
+# = portal number on portal map
+Name = portal name in portal file
+
+Keys for Agent 1
+Needed ;   # ; Name
+     1 ;   0 ; Atardecer en el Mar
+     1 ;   1 ; Mural Playero
+     3 ;   2 ; Cancha de fútbol Tonsupa
+     2 ;   3 ; Cobacha Picho's
+     2 ;   4 ; Plazoleta De Tonsupa
+     3 ;   5 ; Escuela de Surf
+     3 ;   6 ; Figuras Diamond
+     1 ;   7 ; Cancha Multi Diamond
+     2 ;   8 ; Conjunto Riviera Arenys
+     2 ;   9 ; Canchas de Voley Diamond
+     3 ;  10 ; Diamond Juegos infantiles
+     2 ;  11 ; Cancha de tenis Diamond
+     3 ;  12 ; Mural Acuático
+     2 ;  13 ; Nueva Iglesia Católica Espíritu Santo Tonsupa
+     2 ;  14 ; Letras De Tonsupa
+

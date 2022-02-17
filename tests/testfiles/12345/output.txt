@@ -1,0 +1,42 @@
+Found 15 portals in portal file: /var/www/maxfield/jobs/20392/portals.txt
+
+Starting field generation with 6 CPUs.
+Field generation runtime: 3.2 seconds.
+
+==============================
+Maxfield Plan Results:
+    portals         = 15
+    links           = 32
+    fields          = 23
+    max keys needed = 3
+    AP from portals = 26250
+    AP from links   = 10016
+    AP from fields  = 28750
+    TOTAL AP        = 65016
+==============================
+
+Optimizing agent link assignments.
+Route optimization runtime: 0.0 seconds
+
+Total plan build time: 57.8 minutes
+
+Generating key preparation file.
+File saved to: /var/www/maxfield/jobs/20392/key_preparation.txt
+CSV File saved to: /var/www/maxfield/jobs/20392/key_preparation.csv
+Generating ownership preparation file.
+File saved to: /var/www/maxfield/jobs/20392/ownership_preparation.txt
+Generating agent key preparation file.
+File saved to: /var/www/maxfield/jobs/20392/agent_key_preparation.txt
+CSV File saved to: /var/www/maxfield/jobs/20392/agent_key_preparation.csv
+Generating agent link assignments.
+File saved to /var/www/maxfield/jobs/20392/agent_assignments.txt
+CSV File saved to /var/www/maxfield/jobs/20392/agent_assignments.csv
+Generating link assignment for agent 1.
+File saved to /var/www/maxfield/jobs/20392/agent_1_assignment.txt
+
+Generating portal map.
+File saved to: /var/www/maxfield/jobs/20392/portal_map.png
+Generating link map.
+File saved to: /var/www/maxfield/jobs/20392/link_map.png
+
+Total maxfield runtime: 5.7 seconds
