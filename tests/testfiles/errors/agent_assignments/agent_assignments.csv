@@ -1,0 +1,33 @@
+LinkNum, Agent, OriginNum, OriginName, Dest2, 1, 11, Cancha de tenis Diamond, 8, Conjunto Riviera Arenys
+3, 1, 11, Cancha de tenis Diamond, 14, Letras De Tonsupa
+4, 1, 11, Cancha de tenis Diamond, 9, Canchas de Voley Diamond
+5, 1, 10, Diamond Juegos infantiles, 6, Figuras Diamond
+6, 1, 7, Cancha Multi Diamond, 11, Cancha de tenis Diamond
+7, 1, 7, Cancha Multi Diamond, 9, Canchas de Voley Diamond
+8, 1, 6, Figuras Diamond, 2, Cancha de fútbol Tonsupa
+9, 1, 6, Figuras Diamond, 5, Escuela de Surf
+10, 1, 5, Escuela de Surf, 2, Cancha de fútbol Tonsupa
+11, 1, 3, Cobacha Picho's, 12, Mural Acuático
+12, 1, 3, Cobacha Picho's, 11, Cancha de tenis Diamond
+13, 1, 3, Cobacha Picho's, 14, Letras De Tonsupa
+14, 1, 3, Cobacha Picho's, 5, Escuela de Surf
+15, 1, 3, Cobacha Picho's, 6, Figuras Diamond
+16, 1, 3, Cobacha Picho's, 10, Diamond Juegos infantiles
+17, 1, 3, Cobacha Picho's, 7, Cancha Multi Diamond
+18, 1, 3, Cobacha Picho's, 4, Plazoleta De Tonsupa
+19, 1, 0, Atardecer en el Mar, 3, Cobacha Picho's
+20, 1, 0, Atardecer en el Mar, 4, Plazoleta De Tonsupa
+21, 1, 14, Letras De Tonsupa, 13, Nueva Iglesia Católica Espíritu Santo Tonsupa
+22, 1, 14, Letras De Tonsupa, 12, Mural Acuático
+23, 1, 14, Letras De Tonsupa, 8, Conjunto Riviera Arenys
+24, 1, 14, Letras De Tonsupa, 10, Diamond Juegos infantiles
+25, 1, 14, Letras De Tonsupa, 6, Figuras Diamond
+26, 1, 14, Letras De Tonsupa, 5, Escuela de Surf
+27, 1, 14, Letras De Tonsupa, 2, Cancha de fútbol Tonsupa
+28, 1, 14, Letras De Tonsupa, 1, Mural Playero
+29, 1, 1, Mural Playero, 3, Cobacha Picho's
+30, 1, 1, Mural Playero, 0, Atardecer en el Mar
+31, 1, 1, Mural Playero, 12, Mural Acuático
+32, 1, 1, Mural Playero, 13, Nueva Iglesia Católica Espíritu Santo Tonsupa
+inationNum, DestinationName
+1, 1, 11, Cancha de tenis Diamond, 10, Diamond Juegos infantiles, ERROR

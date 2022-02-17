@@ -97,7 +97,9 @@ class MaxfieldParser
             $parts = explode(',', $l);
 
             if (5 !== count($parts)) {
-                continue;
+                throw new UnexpectedValueException(
+                    sprintf('Fishy CSV line has %d parts instead of 5', count($parts))
+                );
             }
 
             $p = new WayPointPrep();
@@ -147,7 +149,7 @@ class MaxfieldParser
 
         usort(
             $links,
-            static function ($a, $b) {
+            static function ($a, $b): int {
                 return $a->linkNum > $b->linkNum ? 1 : 0;
             }
         );

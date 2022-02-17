@@ -1,0 +1,5 @@
+Atardecer en el Mar;https://intel.ingress.com/intel?ll=0.890446,-79.811854&z=16&pll=0.890446,-79.811854;0
+
+Mural Playero;https://intel.ingress.com/intel?ll=0.889739,-79.811583&z=16&pll=0.889739,-79.811583;0
+
+Cancha de fútbol Tonsupa;https://intel.ingress.com/intel?ll=0.890433,-79.810441&z=16&pll=0.890433,-79.810441;0
