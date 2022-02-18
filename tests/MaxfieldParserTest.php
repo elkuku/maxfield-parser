@@ -2,24 +2,12 @@
 
 namespace App\Tests;
 
-use Elkuku\MaxfieldParser\GpxHelper;
 use Elkuku\MaxfieldParser\MaxfieldParser;
 use PHPUnit\Framework\TestCase;
 
 class MaxfieldParserTest extends TestCase
 {
     private string $testDir = __DIR__.'/testfiles';
-
-    public function testGpxParserCanParse(): void
-    {
-        $gpxExpected = file_get_contents($this->testDir.'/test.gpx');
-
-        $gpxHelper = new GpxHelper();
-
-        $gpx = $gpxHelper->getRouteTrackGpx(new MaxfieldParser($this->testDir.'/12345'));
-
-        self::assertEquals($gpxExpected, $gpx);
-    }
 
     public function testParsePortalsEmptyLine(): void
     {

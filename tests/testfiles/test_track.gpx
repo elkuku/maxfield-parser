@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="GPSBabel - http://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/0">
+<trk>
+<name>Routenname</name>
+<trkseg>
+<trkpt lat="0.8953" lon="-79.806709">
+<name>Cancha de tenis Diamond</name>
+<desc>10, 8, 14, 9</desc>
+</trkpt>
+<trkpt lat="0.89515" lon="-79.807097">
+<name>Diamond Juegos infantiles</name>
+<desc>6</desc>
+</trkpt>
+<trkpt lat="0.895502" lon="-79.807367">
+<name>Cancha Multi Diamond</name>
+<desc>11, 9</desc>
+</trkpt>
+<trkpt lat="0.894586" lon="-79.807573">
+<name>Figuras Diamond</name>
+<desc>2, 5</desc>
+</trkpt>
+<trkpt lat="0.892957" lon="-79.811644">
+<name>Escuela de Surf</name>
+<desc>2</desc>
+</trkpt>
+<trkpt lat="0.893185" lon="-79.812195">
+<name>Cobacha Picho's</name>
+<desc>12, 11, 14, 5, 6, 10, 7, 4</desc>
+</trkpt>
+<trkpt lat="0.890446" lon="-79.811854">
+<name>Atardecer en el Mar</name>
+<desc>3, 4</desc>
+</trkpt>
+<trkpt lat="0.88436" lon="-79.80864">
+<name>Letras De Tonsupa</name>
+<desc>13, 12, 8, 10, 6, 5, 2, 1</desc>
+</trkpt>
+<trkpt lat="0.889739" lon="-79.811583">
+<name>Mural Playero</name>
+<desc>3, 0, 12, 13</desc>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
