@@ -26,5 +26,8 @@ class MaxField
      */
     public array $links;
 
+    /**
+     * @var Step[]
+     */
     public array $steps;
 }

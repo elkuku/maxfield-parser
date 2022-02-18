@@ -69,8 +69,8 @@ class MaxfieldParser
 
             $wayPoints[] = new Waypoint(
                 name: trim($parts[0]),
-                lat: $coords[0],
-                lon: $coords[1],
+                lat: (float)$coords[0],
+                lon: (float)$coords[1],
             );
         }
 
@@ -170,6 +170,12 @@ class MaxfieldParser
             throw new UnexpectedValueException('File not found.: '.$path);
         }
 
-        return file_get_contents($path);
+        $contents = file_get_contents($path);
+
+        if (!$contents) {
+            throw new UnexpectedValueException('Error opening file.: '.$path);
+        }
+
+        return $contents;
     }
 }

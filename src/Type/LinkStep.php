@@ -4,6 +4,9 @@ namespace Elkuku\MaxfieldParser\Type;
 
 class LinkStep
 {
+    /**
+     * @var int[]
+     */
     private array $destinations = [];
 
     public function __construct(
@@ -11,12 +14,15 @@ class LinkStep
     ) {
     }
 
+    /**
+     * @return int[]
+     */
     public function getDestinations(): array
     {
         return $this->destinations;
     }
 
-    public function addtDestination(int $destinations): self
+    public function addDestination(int $destinations): self
     {
         $this->destinations[] = $destinations;
 

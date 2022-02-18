@@ -67,6 +67,9 @@ class GpxHelper
         return implode("\n", $xml);
     }
 
+    /**
+     * @return string[]
+     */
     private function getPartHeader(): array
     {
         return [
@@ -75,7 +78,10 @@ class GpxHelper
         ];
     }
 
-    private function getPartFooter()
+    /**
+     * @return string[]
+     */
+    private function getPartFooter(): array
     {
         return ['</gpx>'];
     }
@@ -83,6 +89,8 @@ class GpxHelper
     /**
      * @param AgentLink[] $links
      * @param Waypoint[]  $wayPoints
+     *
+     * @return string[]
      */
     private function getPartTrack(array $links, array $wayPoints): array
     {
@@ -112,6 +120,8 @@ class GpxHelper
 
     /**
      * @param Waypoint[] $wayPoints
+     *
+     * @return string[]
      */
     private function getPartWaypoints(KeyPrep $keyPrep, array $wayPoints): array
     {
@@ -132,6 +142,8 @@ class GpxHelper
     /**
      * @param AgentLink[] $links
      * @param Waypoint[]  $waypoints
+     *
+     * @return string[]
      */
     private function getPartRoute(array $links, array $waypoints): array
     {
@@ -181,9 +193,9 @@ class GpxHelper
                 $origin = $link->originNum;
 
                 $steps[$index] = (new LinkStep($link->originNum))
-                    ->addtDestination($link->destinationNum);
+                    ->addDestination($link->destinationNum);
             } else {
-                $steps[$index]->addtDestination($link->destinationNum);
+                $steps[$index]->addDestination($link->destinationNum);
             }
         }
 
