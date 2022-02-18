@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.0" creator="GPSBabel - http://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/0">
 <trk>
-<name>Routenname</name>
+<name>Track name</name>
 <trkseg>
 <trkpt lat="0.8953" lon="-79.806709">
 <name>Cancha de tenis Diamond</name>
