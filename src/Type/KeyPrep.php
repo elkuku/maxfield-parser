@@ -21,7 +21,7 @@ class KeyPrep
 
         usort(
             $this->wayPoints,
-            static function ($a, $b) {
+            static function (WayPointPrep $a, WayPointPrep $b): int {
                 return $a->mapNo - $b->mapNo;
             }
         );
