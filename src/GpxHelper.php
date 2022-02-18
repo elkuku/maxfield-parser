@@ -91,7 +91,7 @@ class GpxHelper
         $xml = [];
 
         $xml[] = '<trk>';
-        $xml[] = '<name>Route name</name>';
+        $xml[] = '<name>Track name</name>';
         $xml[] = '<trkseg>';
 
         foreach ($steps as $step) {
@@ -138,7 +138,7 @@ class GpxHelper
         $xml = [];
 
         $xml[] = '<rte>';
-        $xml[] = '<name>Routenname</name>';
+        $xml[] = '<name>Route name</name>';
 
         $steps = $this->calculateSteps($links);
 
