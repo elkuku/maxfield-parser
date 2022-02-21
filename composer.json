@@ -18,5 +18,14 @@
     "require-dev": {
         "phpunit/phpunit": "^9.5",
         "phpstan/phpstan": "^1.4"
+    },
+    "scripts": {
+        "phpunit" :[
+            "vendor/bin/phpunit --testdox"
+        ],
+        "phpstan": [
+            "vendor/bin/phpstan analyse -l 9 src tests"
+        ],
+        "ci" : ["@phpunit", "@phpstan"]
     }
 }
