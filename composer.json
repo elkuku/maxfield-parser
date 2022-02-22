@@ -24,7 +24,7 @@
             "vendor/bin/phpunit --testdox"
         ],
         "phpstan": [
-            "vendor/bin/phpstan analyse -l 9 src tests"
+            "vendor/bin/phpstan analyse -l max src tests"
         ],
         "ci" : ["@phpunit", "@phpstan"]
     }
