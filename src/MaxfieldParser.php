@@ -24,8 +24,6 @@ class MaxfieldParser
     {
         $maxField = new MaxField();
 
-        // $numPlayers = 1;
-
         $maxField->keyPrep = $this->getKeyPrep($subPath);
         $maxField->agentsInfo = $this->getAgentsInfo($subPath);
 
@@ -97,30 +95,31 @@ class MaxfieldParser
     }
 
     /**
+     * @todo this returns an array where all the elements are almost the same :(
+     *
      * @return AgentInfo[]
      */
     private function getAgentsInfo(string $item): array
     {
-        // @todo get numagents
-        $numAgents = 1;
         $agentsInfo = [];
+        $links = $this->getLinks($item);
+        $keys = $this->parseAgentKeyPrepFile($item);
+
+        $numAgents = 1;
+        foreach ($links as $link) {
+            if ($link->agentNum > $numAgents) {
+                $numAgents = $link->agentNum;
+            }
+        }
 
         for ($count = 1; $count <= $numAgents; $count++) {
-
-        // try {
-        //     start:
             $info = new AgentInfo();
+
             $info->agentNumber = $count;
-            // $fileName = sprintf('agent_%d_assignment.txt', $count);
-            // $info->linksInfo = $this->getTextFileContents($item, $fileName);
-            $info->links = $this->getLinks($item);
-            $info->keys = $this->parseAgentKeyPrepFile($item);
+            $info->links = $links;
+            $info->keys = $keys;
+
             $agentsInfo[] = $info;
-            // $count++;
-            // goto start;
-        // } catch (FileNotFoundException) {
-            // Finished.
-        // }
         }
 
         return $agentsInfo;

@@ -25,6 +25,21 @@ class MaxfieldParserTest extends TestCase
         self::assertCount(40, $maxfield->steps);
     }
 
+    public function testParseMaxfieldMultiplePlayers(): void
+    {
+        $parser = new MaxfieldParser($this->testDir.'/20493');
+
+        $maxfield = $parser->parse();
+
+        self::assertCount(15, $maxfield->keyPrep->getWayPoints());
+        self::assertCount(32, $maxfield->links);
+        self::assertCount(3, $maxfield->agentsInfo);
+        self::assertCount(32, $maxfield->agentsInfo[0]->links);
+        self::assertCount(26, $maxfield->agentsInfo[0]->keys->getWayPoints());
+        self::assertCount(50, $maxfield->steps);
+
+    }
+
     public function testParsePortalsEmptyLine(): void
     {
         $parser = new MaxfieldParser($this->testDir.'/errors');
