@@ -12,7 +12,7 @@ class GpxHelper
     public function getWaypointsGpx(MaxfieldParser $maxfieldParser): string
     {
         $keyPrep = $maxfieldParser->getKeyPrep();
-        $wayPoints = $maxfieldParser->parseWayPointsFile();
+        $wayPoints = $maxfieldParser->getWayPoints();
 
         $xml = array_merge(
             $this->getPartHeader(),
@@ -26,7 +26,7 @@ class GpxHelper
     public function getRouteTrackGpx(MaxfieldParser $maxfieldParser): string
     {
         $keyPrep = $maxfieldParser->getKeyPrep();
-        $wayPoints = $maxfieldParser->parseWayPointsFile();
+        $wayPoints = $maxfieldParser->getWayPoints();
         $links = $maxfieldParser->getLinks();
 
         $xml = array_merge(
@@ -41,7 +41,7 @@ class GpxHelper
 
     public function getRouteGpx(MaxfieldParser $maxfieldParser): string
     {
-        $wayPoints = $maxfieldParser->parseWayPointsFile();
+        $wayPoints = $maxfieldParser->getWayPoints();
         $links = $maxfieldParser->getLinks();
 
         $xml = array_merge(
@@ -55,7 +55,7 @@ class GpxHelper
 
     public function getTrackGpx(MaxfieldParser $maxfieldParser): string
     {
-        $wayPoints = $maxfieldParser->parseWayPointsFile();
+        $wayPoints = $maxfieldParser->getWayPoints();
         $links = $maxfieldParser->getLinks();
 
         $xml = array_merge(
