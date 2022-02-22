@@ -1,0 +1,49 @@
+Agent 2 Linking Assignment: links should be made in this order
+
+Link = the current link number
+Agent = the person making this link
+# = portal number on portal map
+Link Origin/Destination = portal name in portal file
+
+Link ; Agent ;   # ; Link Origin
+                 # ; Link Destination
+
+   2 ;     2 ;   1 ; Mural Playero 
+             ;  12 : Mural Acuático 
+
+   5 ;     2 ;   1 ; Mural Playero 
+             ;   0 : Atardecer en el Mar 
+
+   8 ;     2 ;   1 ; Mural Playero 
+             ;  14 : Letras De Tonsupa 
+
+  10 ;     2 ;   2 ; Cancha de fútbol Tonsupa 
+             ;   4 : Plazoleta De Tonsupa 
+
+  11 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   1 : Mural Playero 
+
+  12 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   5 : Escuela de Surf 
+
+  13 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   6 : Figuras Diamond 
+
+  14 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   0 : Atardecer en el Mar 
+
+  15 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   3 : Cobacha Picho's 
+
+  16 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   7 : Cancha Multi Diamond 
+
+  17 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;  12 : Mural Acuático 
+
+  18 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;  10 : Diamond Juegos infantiles 
+
+  19 ;     2 ;   3 ; Cobacha Picho's 
+             ;   7 : Cancha Multi Diamond 
+

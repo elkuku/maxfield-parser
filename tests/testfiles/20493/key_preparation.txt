@@ -1,0 +1,24 @@
+Key Preparation: sorted by portal number
+
+Needed = total keys required
+Have = keys in inventory
+Remaining = keys necessary to farm
+# = portal number on portal map
+Name = portal name in portal file
+
+Needed ; Have ; Remaining ;   # ; Name
+     2 ;    0 ;         2 ;   0 : Atardecer en el Mar
+     2 ;    0 ;         2 ;   1 : Mural Playero
+     2 ;    0 ;         2 ;   2 : Cancha de fútbol Tonsupa
+     1 ;    0 ;         1 ;   3 : Cobacha Picho's
+     4 ;    0 ;         4 ;   4 : Plazoleta De Tonsupa
+     3 ;    0 ;         3 ;   5 : Escuela de Surf
+     3 ;    0 ;         3 ;   6 : Figuras Diamond
+     2 ;    0 ;         2 ;   7 : Cancha Multi Diamond
+     3 ;    0 ;         3 ;   8 : Conjunto Riviera Arenys
+     1 ;    0 ;         1 ;   9 : Canchas de Voley Diamond
+     3 ;    0 ;         3 ;  10 : Diamond Juegos infantiles
+     1 ;    0 ;         1 ;  11 : Cancha de tenis Diamond
+     3 ;    0 ;         3 ;  12 : Mural Acuático
+     0 ;    0 ;         0 ;  13 : Nueva Iglesia Católica Espíritu Santo Tonsupa
+     2 ;    0 ;         2 ;  14 : Letras De Tonsupa

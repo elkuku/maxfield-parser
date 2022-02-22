@@ -1,0 +1,15 @@
+Atardecer en el Mar;https://intel.ingress.com/intel?ll=0.890446,-79.811854&z=16&pll=0.890446,-79.811854;0
+Mural Playero;https://intel.ingress.com/intel?ll=0.889739,-79.811583&z=16&pll=0.889739,-79.811583;0
+Cancha de fútbol Tonsupa;https://intel.ingress.com/intel?ll=0.890433,-79.810441&z=16&pll=0.890433,-79.810441;0
+Cobacha Picho's;https://intel.ingress.com/intel?ll=0.893185,-79.812195&z=16&pll=0.893185,-79.812195;0
+Plazoleta De Tonsupa;https://intel.ingress.com/intel?ll=0.892721,-79.812681&z=16&pll=0.892721,-79.812681;0
+Escuela de Surf;https://intel.ingress.com/intel?ll=0.892957,-79.811644&z=16&pll=0.892957,-79.811644;0
+Figuras Diamond;https://intel.ingress.com/intel?ll=0.894586,-79.807573&z=16&pll=0.894586,-79.807573;0
+Cancha Multi Diamond;https://intel.ingress.com/intel?ll=0.895502,-79.807367&z=16&pll=0.895502,-79.807367;0
+Conjunto Riviera Arenys;https://intel.ingress.com/intel?ll=0.893495,-79.805862&z=16&pll=0.893495,-79.805862;0
+Canchas de Voley Diamond;https://intel.ingress.com/intel?ll=0.895527,-79.806852&z=16&pll=0.895527,-79.806852;0
+Diamond Juegos infantiles;https://intel.ingress.com/intel?ll=0.89515,-79.807097&z=16&pll=0.89515,-79.807097;0
+Cancha de tenis Diamond;https://intel.ingress.com/intel?ll=0.8953,-79.806709&z=16&pll=0.8953,-79.806709;0
+Mural Acuático;https://intel.ingress.com/intel?ll=0.887495,-79.810194&z=16&pll=0.887495,-79.810194;0
+Nueva Iglesia Católica Espíritu Santo Tonsupa;https://intel.ingress.com/intel?ll=0.886116,-79.809744&z=16&pll=0.886116,-79.809744;0
+Letras De Tonsupa;https://intel.ingress.com/intel?ll=0.88436,-79.80864&z=16&pll=0.88436,-79.80864;0

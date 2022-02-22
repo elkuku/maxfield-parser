@@ -1,0 +1,27 @@
+Ownership Preparation: sorted by portal number
+
+# = portal number on portal map
+Name = portal name in portal file
+
+These portals' first links are incoming. They should be at full resonators before linking.
+
+  # ; Name
+  0 ; Atardecer en el Mar
+  2 ; Cancha de fútbol Tonsupa
+  3 ; Cobacha Picho's
+  4 ; Plazoleta De Tonsupa
+  5 ; Escuela de Surf
+  6 ; Figuras Diamond
+  7 ; Cancha Multi Diamond
+  8 ; Conjunto Riviera Arenys
+  9 ; Canchas de Voley Diamond
+ 10 ; Diamond Juegos infantiles
+ 11 ; Cancha de tenis Diamond
+ 12 ; Mural Acuático
+
+These portals' first links are outgoing. Their resonators can be applied when the first agent arrives.
+
+  # ; Name
+  1 ; Mural Playero
+ 13 ; Nueva Iglesia Católica Espíritu Santo Tonsupa
+ 14 ; Letras De Tonsupa

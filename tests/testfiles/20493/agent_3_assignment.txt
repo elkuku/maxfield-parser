@@ -1,0 +1,40 @@
+Agent 3 Linking Assignment: links should be made in this order
+
+Link = the current link number
+Agent = the person making this link
+# = portal number on portal map
+Link Origin/Destination = portal name in portal file
+
+Link ; Agent ;   # ; Link Origin
+                 # ; Link Destination
+
+   3 ;     3 ;  13 ; Nueva Iglesia Católica Espíritu Santo Tonsupa 
+             ;   1 : Mural Playero 
+
+   6 ;     3 ;  13 ; Nueva Iglesia Católica Espíritu Santo Tonsupa 
+             ;  14 : Letras De Tonsupa 
+
+  20 ;     3 ;   6 ; Figuras Diamond 
+             ;   5 : Escuela de Surf 
+
+  21 ;     3 ;  10 ; Diamond Juegos infantiles 
+             ;   6 : Figuras Diamond 
+
+  22 ;     3 ;   7 ; Cancha Multi Diamond 
+             ;   9 : Canchas de Voley Diamond 
+
+  23 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;  10 : Diamond Juegos infantiles 
+
+  24 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;  11 : Cancha de tenis Diamond 
+
+  25 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;   4 : Plazoleta De Tonsupa 
+
+  26 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;   8 : Conjunto Riviera Arenys 
+
+  28 ;     3 ;  11 ; Cancha de tenis Diamond 
+             ;   8 : Conjunto Riviera Arenys 
+

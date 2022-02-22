@@ -1,0 +1,106 @@
+Agent Linking Assignments: links should be made in this order
+
+Link = the current link number
+Agent = the person making this link
+# = portal number on portal map
+Link Origin/Destination = portal name in portal file
+
+Link ; Agent ;   # ; Link Origin
+                 # ; Link Destination
+
+   1 ;     1 ;  14 ; Letras De Tonsupa 
+             ;   2 : Cancha de fútbol Tonsupa 
+
+   2 ;     2 ;   1 ; Mural Playero 
+             ;  12 : Mural Acuático 
+
+   3 ;     3 ;  13 ; Nueva Iglesia Católica Espíritu Santo Tonsupa 
+             ;   1 : Mural Playero 
+
+   4 ;     1 ;  14 ; Letras De Tonsupa 
+             ;  12 : Mural Acuático 
+
+   5 ;     2 ;   1 ; Mural Playero 
+             ;   0 : Atardecer en el Mar 
+
+   6 ;     3 ;  13 ; Nueva Iglesia Católica Espíritu Santo Tonsupa 
+             ;  14 : Letras De Tonsupa 
+
+   7 ;     1 ;  14 ; Letras De Tonsupa 
+             ;   4 : Plazoleta De Tonsupa 
+
+   8 ;     2 ;   1 ; Mural Playero 
+             ;  14 : Letras De Tonsupa 
+
+   9 ;     1 ;  14 ; Letras De Tonsupa 
+             ;   8 : Conjunto Riviera Arenys 
+
+  10 ;     2 ;   2 ; Cancha de fútbol Tonsupa 
+             ;   4 : Plazoleta De Tonsupa 
+
+  11 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   1 : Mural Playero 
+
+  12 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   5 : Escuela de Surf 
+
+  13 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   6 : Figuras Diamond 
+
+  14 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   0 : Atardecer en el Mar 
+
+  15 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   3 : Cobacha Picho's 
+
+  16 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;   7 : Cancha Multi Diamond 
+
+  17 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;  12 : Mural Acuático 
+
+  18 ;     2 ;   4 ; Plazoleta De Tonsupa 
+             ;  10 : Diamond Juegos infantiles 
+
+  19 ;     2 ;   3 ; Cobacha Picho's 
+             ;   7 : Cancha Multi Diamond 
+
+  20 ;     3 ;   6 ; Figuras Diamond 
+             ;   5 : Escuela de Surf 
+
+  21 ;     3 ;  10 ; Diamond Juegos infantiles 
+             ;   6 : Figuras Diamond 
+
+  22 ;     3 ;   7 ; Cancha Multi Diamond 
+             ;   9 : Canchas de Voley Diamond 
+
+  23 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;  10 : Diamond Juegos infantiles 
+
+  24 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;  11 : Cancha de tenis Diamond 
+
+  25 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;   4 : Plazoleta De Tonsupa 
+
+  26 ;     3 ;   9 ; Canchas de Voley Diamond 
+             ;   8 : Conjunto Riviera Arenys 
+
+  27 ;     1 ;   8 ; Conjunto Riviera Arenys 
+             ;   4 : Plazoleta De Tonsupa 
+
+  28 ;     3 ;  11 ; Cancha de tenis Diamond 
+             ;   8 : Conjunto Riviera Arenys 
+
+  29 ;     1 ;   8 ; Conjunto Riviera Arenys 
+             ;  10 : Diamond Juegos infantiles 
+
+  30 ;     1 ;   8 ; Conjunto Riviera Arenys 
+             ;   6 : Figuras Diamond 
+
+  31 ;     1 ;   8 ; Conjunto Riviera Arenys 
+             ;   5 : Escuela de Surf 
+
+  32 ;     1 ;   8 ; Conjunto Riviera Arenys 
+             ;   2 : Cancha de fútbol Tonsupa 
+
