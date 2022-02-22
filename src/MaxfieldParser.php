@@ -95,9 +95,9 @@ class MaxfieldParser
     }
 
     /**
+     * @return AgentInfo[]
      * @todo this returns an array where all the elements are almost the same :(
      *
-     * @return AgentInfo[]
      */
     private function getAgentsInfo(string $item): array
     {
@@ -165,7 +165,7 @@ class MaxfieldParser
         return $keyPrep;
     }
 
-    private function parseAgentKeyPrepFile($subPath = ''): KeyPrep
+    private function parseAgentKeyPrepFile(string $subPath = ''): KeyPrep
     {
         $keyPrep = new KeyPrep();
 
@@ -270,38 +270,40 @@ class MaxfieldParser
             : $this->rootDir;
     }
 
+    /**
+     * This generates an array containing:
+     *  - The "links"
+     *  - The "moves" from one portal to the next.
+     *
+     * @param AgentLink[] $links
+     *
+     * @return Step[]
+     */
     private function calculateSteps(array $links): array
     {
         $steps = [];
 
         foreach ($links as $i => $link) {
-            if ($i > 0) {
-                if ($link->originNum !== $links[$i - 1]->originNum) {
-                    $step = new Step();
-                    $step->action = Step::TYPE_MOVE;
-                    $step->agentNum = $link->agentNum;
-                    $step->originNum = $links[$i - 1]->originNum;
-                    $step->originName = $links[$i - 1]->originName;
-                    $step->destinationNum = $link->originNum;
-                    $step->destinationName = $link->originName;
-
-                    $steps[] = $step;
-                }
+            if (($i > 0) && $link->originNum !== $links[$i - 1]->originNum) {
+                $steps[] = new Step(
+                    action: Step::TYPE_MOVE,
+                    agentNum: $link->agentNum,
+                    originNum: $links[$i - 1]->originNum,
+                    originName: $links[$i - 1]->originName,
+                    destinationNum: $link->originNum,
+                    destinationName: $link->originName
+                );
             }
 
-            $step = new Step();
-
-            $step->action = Step::TYPE_LINK;
-
-            $step->linkNum = $link->linkNum;
-
-            $step->agentNum = $link->agentNum;
-            $step->originNum = $link->originNum;
-            $step->originName = $link->originName;
-            $step->destinationNum = $link->destinationNum;
-            $step->destinationName = $link->destinationName;
-
-            $steps[] = $step;
+            $steps[] = new Step(
+                action: Step::TYPE_LINK,
+                linkNum: $link->linkNum,
+                agentNum: $link->agentNum,
+                originNum: $link->originNum,
+                originName: $link->originName,
+                destinationNum: $link->destinationNum,
+                destinationName: $link->destinationName
+            );
         }
 
         return $steps;
