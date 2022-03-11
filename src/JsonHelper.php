@@ -9,13 +9,13 @@ use Elkuku\MaxfieldParser\Type\Waypoint;
 class JsonHelper
 {
     /**
-     * @throws \JsonException
+     * @return array<string, array<Waypoint|\stdClass>>
      */
-    public function getJson(MaxfieldParser $maxfieldParser): string
+    public function getJsonData(MaxfieldParser $maxfieldParser): array
     {
         $wayPoints = $maxfieldParser->getWayPoints();
 
-        $result = [
+        return [
             'waypoints' => $this->getPartWaypoints(
                 $maxfieldParser->getKeyPrep(),
                 $wayPoints
@@ -25,8 +25,15 @@ class JsonHelper
                 $wayPoints
             ),
         ];
+    }
 
-        return json_encode($result, JSON_THROW_ON_ERROR);
+    /**
+     * @throws \JsonException
+     */
+    public function getJson(MaxfieldParser $maxfieldParser): string
+    {
+
+        return json_encode($this->getJsonData($maxfieldParser), JSON_THROW_ON_ERROR);
     }
 
     /**
