@@ -37,7 +37,6 @@ class MaxfieldParserTest extends TestCase
         self::assertCount(32, $maxfield->agentsInfo[0]->links);
         self::assertCount(26, $maxfield->agentsInfo[0]->keys->getWayPoints());
         self::assertCount(50, $maxfield->steps);
-
     }
 
     public function testParsePortalsEmptyLine(): void
@@ -82,7 +81,9 @@ class MaxfieldParserTest extends TestCase
     public function testParseKeyprepFishy(): void
     {
         $this->expectException(UnexpectedValueException::class);
-        $this->expectExceptionMessage('Fishy CSV line has 6 parts instead of 5');
+        $this->expectExceptionMessage(
+            'Fishy CSV line has 6 parts instead of 5'
+        );
 
         $parser = new MaxfieldParser($this->testDir.'/errors');
 

@@ -87,7 +87,7 @@ class GpxHelper
 
     /**
      * @param LinkStep[] $steps
-     * @param Waypoint[]  $wayPoints
+     * @param Waypoint[] $wayPoints
      *
      * @return string[]
      */
@@ -138,7 +138,7 @@ class GpxHelper
 
     /**
      * @param LinkStep[] $steps
-     * @param Waypoint[]  $waypoints
+     * @param Waypoint[] $waypoints
      *
      * @return string[]
      */
