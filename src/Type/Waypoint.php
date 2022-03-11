@@ -8,6 +8,7 @@ class Waypoint
         public string $name,
         public float $lat,
         public float $lon,
+        public string $description = '',
     ) {
     }
 }

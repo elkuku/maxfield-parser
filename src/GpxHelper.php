@@ -2,7 +2,6 @@
 
 namespace Elkuku\MaxfieldParser;
 
-use Elkuku\MaxfieldParser\Type\AgentLink;
 use Elkuku\MaxfieldParser\Type\KeyPrep;
 use Elkuku\MaxfieldParser\Type\LinkStep;
 use Elkuku\MaxfieldParser\Type\Waypoint;
@@ -27,7 +26,7 @@ class GpxHelper
     {
         $keyPrep = $maxfieldParser->getKeyPrep();
         $wayPoints = $maxfieldParser->getWayPoints();
-        $links = $maxfieldParser->getLinks();
+        $links = $maxfieldParser->getLinkSteps();
 
         $xml = array_merge(
             $this->getPartHeader(),
@@ -42,7 +41,7 @@ class GpxHelper
     public function getRouteGpx(MaxfieldParser $maxfieldParser): string
     {
         $wayPoints = $maxfieldParser->getWayPoints();
-        $links = $maxfieldParser->getLinks();
+        $links = $maxfieldParser->getLinkSteps();
 
         $xml = array_merge(
             $this->getPartHeader(),
@@ -56,7 +55,7 @@ class GpxHelper
     public function getTrackGpx(MaxfieldParser $maxfieldParser): string
     {
         $wayPoints = $maxfieldParser->getWayPoints();
-        $links = $maxfieldParser->getLinks();
+        $links = $maxfieldParser->getLinkSteps();
 
         $xml = array_merge(
             $this->getPartHeader(),
@@ -87,15 +86,13 @@ class GpxHelper
     }
 
     /**
-     * @param AgentLink[] $links
+     * @param LinkStep[] $steps
      * @param Waypoint[]  $wayPoints
      *
      * @return string[]
      */
-    private function getPartTrack(array $links, array $wayPoints): array
+    private function getPartTrack(array $steps, array $wayPoints): array
     {
-        $steps = $this->calculateSteps($links);
-
         $xml = [];
 
         $xml[] = '<trk>';
@@ -140,19 +137,17 @@ class GpxHelper
     }
 
     /**
-     * @param AgentLink[] $links
+     * @param LinkStep[] $steps
      * @param Waypoint[]  $waypoints
      *
      * @return string[]
      */
-    private function getPartRoute(array $links, array $waypoints): array
+    private function getPartRoute(array $steps, array $waypoints): array
     {
         $xml = [];
 
         $xml[] = '<rte>';
         $xml[] = '<name>Route name</name>';
-
-        $steps = $this->calculateSteps($links);
 
         foreach ($steps as $step) {
             $origin = $waypoints[$step->origin];
@@ -171,34 +166,5 @@ class GpxHelper
         $xml[] = '</rte>';
 
         return $xml;
-    }
-
-    /**
-     * @param AgentLink[] $links
-     *
-     * @return LinkStep[]
-     */
-    private function calculateSteps(array $links): array
-    {
-        /**
-         * @var LinkStep[] $steps
-         */
-        $steps = [];
-        $index = -1;
-        $origin = 0;
-
-        foreach ($links as $link) {
-            if ($link->originNum !== $origin) {
-                $index++;
-                $origin = $link->originNum;
-
-                $steps[$index] = (new LinkStep($link->originNum))
-                    ->addDestination($link->destinationNum);
-            } else {
-                $steps[$index]->addDestination($link->destinationNum);
-            }
-        }
-
-        return $steps;
     }
 }

@@ -6,6 +6,7 @@ use Elkuku\MaxfieldParser\Exception\FileNotFoundException;
 use Elkuku\MaxfieldParser\Type\AgentInfo;
 use Elkuku\MaxfieldParser\Type\AgentLink;
 use Elkuku\MaxfieldParser\Type\KeyPrep;
+use Elkuku\MaxfieldParser\Type\LinkStep;
 use Elkuku\MaxfieldParser\Type\MaxField;
 use Elkuku\MaxfieldParser\Type\Step;
 use Elkuku\MaxfieldParser\Type\Waypoint;
@@ -29,6 +30,7 @@ class MaxfieldParser
 
         $maxField->links = $this->getLinks($subPath);
         $maxField->steps = $this->calculateSteps($maxField->links);
+        $maxField->linkSteps = $this->calculateLinkSteps($maxField->links);
 
         return $maxField;
     }
@@ -48,6 +50,14 @@ class MaxfieldParser
         return $this->parseCsvLinks(
             $this->getFileContents('agent_assignments.csv', $subPath)
         );
+    }
+
+    /**
+     * @return LinkStep[]
+     */
+    public function getLinkSteps(string $subPath = ''): array
+    {
+        return $this->calculateLinkSteps($this->getLinks($subPath));
     }
 
     /**
@@ -304,6 +314,35 @@ class MaxfieldParser
                 destinationNum: $link->destinationNum,
                 destinationName: $link->destinationName
             );
+        }
+
+        return $steps;
+    }
+
+    /**
+     * @param AgentLink[] $links
+     *
+     * @return LinkStep[]
+     */
+    private function calculateLinkSteps(array $links): array
+    {
+        /**
+         * @var LinkStep[] $steps
+         */
+        $steps = [];
+        $index = -1;
+        $origin = 0;
+
+        foreach ($links as $link) {
+            if ($link->originNum !== $origin) {
+                $index++;
+                $origin = $link->originNum;
+
+                $steps[$index] = (new LinkStep($link->originNum))
+                    ->addDestination($link->destinationNum);
+            } else {
+                $steps[$index]->addDestination($link->destinationNum);
+            }
         }
 
         return $steps;
