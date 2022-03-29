@@ -331,7 +331,7 @@ class MaxfieldParser
          */
         $steps = [];
         $index = -1;
-        $origin = 0;
+        $origin = -1;
 
         foreach ($links as $link) {
             if ($link->originNum !== $origin) {
