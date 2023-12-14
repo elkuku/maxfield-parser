@@ -20,6 +20,7 @@ class JsonHelperTest extends TestCase
             new MaxfieldParser($this->testDir.'/12345')
         );
 
+//        print_r($result);
         self::assertEquals($expected, $result);
     }
 }
