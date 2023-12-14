@@ -54,6 +54,7 @@ class JsonHelper
                 name: $name,
                 lat: $wayPoint->lat,
                 lon: $wayPoint->lon,
+                keys: $wayPointAgent->keysNeeded,
                 description: 'Farm keys: '.$wayPointAgent->keysNeeded
             );
         }
