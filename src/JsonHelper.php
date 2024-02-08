@@ -85,8 +85,12 @@ class JsonHelper
             $link->links = [];
 
             foreach ($step->getDestinations() as $index) {
-                $name = str_replace('\'', '', $waypoints[$index]->name);
-                $link->links[] = $name;
+                $l = new \stdClass();
+
+                $l->num = $index;
+                $l->name = str_replace('\'', '', $waypoints[$index]->name);
+
+                $link->links[] = $l;
             }
 
             $links[] = $link;
